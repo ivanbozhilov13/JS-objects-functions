@@ -3,6 +3,7 @@
 and can be called at any time during the code. 
 You declare the function using the keyword then assign a name to it called identifier
 Statements sit in a code block, inside the curly braces.*/
+
 function sayHello(greeting){
     var greeting;
     return greeting;
@@ -19,6 +20,7 @@ console.log(size);
 /*Creating an Object. In this case a hotel with booked and free rooms
 Keys are in front before the two dots, cant have the same name. Values follow
 after the two dots*/
+
 var hotel = {
     name: 'Quay',
     rooms: 40,
