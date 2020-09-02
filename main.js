@@ -20,7 +20,6 @@ console.log(size);
 /*Creating an Object. In this case a hotel with booked and free rooms
 Keys are in front before the two dots, cant have the same name. Values follow
 after the two dots*/
-
 var hotel = {
     name: 'Quay',
     rooms: 40,
@@ -39,3 +38,16 @@ elName.textContent = hotel.name;
 var elRooms = document.getElementById('rooms');
 elRooms.textContent = hotel.checkAvailability();
 document.write('rooms left');
+
+//Creating an Object using constructor syntax thus the word 'new'
+var hotel = new Object();
+
+hotel.name = 'Park';
+hotel.rooms = 120;
+hotel.booked = 77;
+hotel.checkAvailability = function (){
+    return this.rooms - this.booked;
+};
+
+var elName = document.getElementById('hotelName');
+elName.textContent = hotel.checkAvailability();
