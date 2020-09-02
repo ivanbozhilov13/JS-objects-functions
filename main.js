@@ -59,3 +59,10 @@ hotel.checkAvailability = function (){
 
 var elName = document.getElementById('hotelName');
 elName.textContent = hotel.checkAvailability();
+
+var msg = document.title + '</br>';
+msg += '<b>page adress is:</b>' + " " + document.URL + '</br>';
+msg += '<b>last modified:</b>' + " " + document.lastModified;
+
+var el = document.getElementById('footer');
+el.innerHTML = msg;
