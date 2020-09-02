@@ -32,6 +32,14 @@ var hotel = {
         return this.rooms - this.booked;
     }
 };
+hotel.pool = true; //This is one way to add properties by using literal notation
+hotel.restaurat = true; //This is one way to add properties by using literal notation
+hotel.gymFacilities = ['bench press','dreadmill','pull bar','dip bar']; //This is one way to add properties by using literal notation
+hotel.emploeyees = 'A lot of them' //We want to remove this property
+delete hotel.emploeyees; //We use the keyword delete to remove a propery from the Object
+console.log(hotel);
+
+
 var elName = document.getElementById('hotelName');
 elName.textContent = hotel.name;
 
