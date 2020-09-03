@@ -45,7 +45,7 @@ elName.textContent = hotel.name;
 
 var elRooms = document.getElementById('rooms');
 elRooms.textContent = hotel.checkAvailability();
-document.write('rooms left');
+document.write('');
 
 //Creating an Object using constructor syntax thus the word 'new'
 var hotel = new Object();
@@ -68,8 +68,11 @@ el.innerHTML = msg;
 
 //Global Objects - String Objects
 var saying = 'Home sweet home'; 
-var msg1 = '<b>Length:</b>' + saying.length;
-msg1 += '<p>Uppercase</p>' + saying.toUpperCase();
+var msg1 = '<h3>Length is:</h3>' + saying.length;
+msg1 += '<h3>Uppercase:</h3>' + saying.toUpperCase();
+msg1 += '<h3>Lowercase:</h3>' + saying.toLowerCase();
+msg1 += '<h3>First:</h3>' +saying.indexOf('ee');
+msg1 += '<h3>Replacement:</h3>' + saying.replace('me','e');
 
-var el3 = document.getElementById('info');
-el3.innerHTML = msg1;
+var el1 = document.getElementById('info');
+el1.innerHTML = msg1;
