@@ -56,13 +56,20 @@ hotel.booked = 77;
 hotel.checkAvailability = function (){
     return this.rooms - this.booked;
 };
-
 var elName = document.getElementById('hotelName');
 elName.textContent = hotel.checkAvailability();
 
+//DOM = Document Object
 var msg = document.title + '</br>';
-msg += '<b>page adress is:</b>' + " " + document.URL + '</br>';
-msg += '<b>last modified:</b>' + " " + document.lastModified;
-
+msg += '<b>Page adress is:</b>' + " " + document.URL + '</br>';
+msg += '<b>Last modified:</b>' + " " + document.lastModified;
 var el = document.getElementById('footer');
 el.innerHTML = msg;
+
+//Global Objects - String Objects
+var saying = 'Home sweet home'; 
+var msg1 = '<b>Length:</b>' + saying.length;
+msg1 += '<p>Uppercase</p>' + saying.toUpperCase();
+
+var el3 = document.getElementById('info');
+el3.innerHTML = msg1;
