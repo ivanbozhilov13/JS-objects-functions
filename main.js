@@ -71,7 +71,7 @@ var saying = 'Home sweet home';
 var msg1 = '<h3>Length is:</h3>' + saying.length;
 msg1 += '<h3>Uppercase:</h3>' + saying.toUpperCase();
 msg1 += '<h3>Lowercase:</h3>' + saying.toLowerCase();
-msg1 += '<h3>First:</h3>' +saying.indexOf('ee');
+msg1 += '<h3>First:</h3>' + saying.indexOf('ee');
 msg1 += '<h3>Replacement:</h3>' + saying.replace('me','e');
 
 var el1 = document.getElementById('info');
