@@ -77,7 +77,10 @@ msg1 += '<h3>Replacement:</h3>' + saying.replace('me','e');
 var el1 = document.getElementById('info');
 el1.innerHTML = msg1;
 
-let myArray = [20, 30, 50, 60];
+let myArray = [20, 50, 10, 33];
+myArray.push('hello');
+myArray.pop('hello');
+myArray[5] = 'This is an array';
+myArray[6] = 'Chi va piano va sano e lontano';
 
-    
-console.log(myArray.length);
+console.log(myArray);
