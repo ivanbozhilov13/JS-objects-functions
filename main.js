@@ -81,7 +81,8 @@ el1.innerHTML = msg1;
 let myArray = [20, 50, 10, 33];
 myArray.push('hello');
 myArray.pop('hello');
-myArray[5] = 'This is an array';
-myArray[6] = 'Chi va piano va sano e lontano';
+myArray.push('this is an array'); 
+myArray.push('kokooooo');
+myArray.pop([7]);
 
 console.log(myArray);
