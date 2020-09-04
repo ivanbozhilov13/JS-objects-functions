@@ -77,6 +77,7 @@ msg1 += '<h3>Replacement:</h3>' + saying.replace('me','e');
 var el1 = document.getElementById('info');
 el1.innerHTML = msg1;
 
+//Arrays
 let myArray = [20, 50, 10, 33];
 myArray.push('hello');
 myArray.pop('hello');
