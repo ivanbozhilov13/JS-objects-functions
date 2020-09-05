@@ -3,7 +3,6 @@
 and can be called at any time during the code. 
 You declare the function using the keyword then assign a name to it called identifier
 Statements sit in a code block, inside the curly braces.*/
-
 function sayHello(greeting){
     var greeting;
     return greeting;
@@ -49,7 +48,6 @@ document.write('');
 
 //Creating an Object using constructor syntax thus the word 'new'
 var hotel = new Object();
-
 hotel.name = 'Park';
 hotel.rooms = 120;
 hotel.booked = 77;
