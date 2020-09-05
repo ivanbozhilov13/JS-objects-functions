@@ -84,4 +84,4 @@ myArray.push('kokooooo');
 myArray.pop([7]);
 myArray.push('Never ever again');
 myArray.pop([20]);
-console.log(myArray);
+console.log('This are the result' + myArray);
