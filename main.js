@@ -82,5 +82,6 @@ myArray.pop('hello');
 myArray.push('this is an array'); 
 myArray.push('kokooooo');
 myArray.pop([7]);
-
+myArray.push('Never ever again');
+myArray.pop([20]);
 console.log(myArray);
