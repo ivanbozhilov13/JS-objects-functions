@@ -1,20 +1,13 @@
-//Functions and their 'functions'
-/*This is a very basic functions but illustrates how one works. The perform an action
-and can be called at any time during the code. 
-You declare the function using the keyword then assign a name to it called identifier
-Statements sit in a code block, inside the curly braces.*/
-function sayHello(greeting){
-    var greeting;
-    return greeting;
-}
-console.log('Hello World!');    
-
-function getArea(width, height){    
-    var area = width * height;
-    return area;
-}
-var size = getArea(5, 5);
-console.log(size);
+//Arrays
+let myArray = [20, 50, 10, 33];
+myArray.push('hello');
+myArray.pop('hello');
+myArray.push('this is an array'); 
+myArray.push('kokooooo');
+myArray.pop([7]);
+myArray.push('Never ever again');
+myArray.pop([20]);
+console.log('This are the result' + myArray);
 
 /*Creating an Object. In this case a hotel with booked and free rooms
 Keys are in front before the two dots, cant have the same name. Values follow
@@ -57,13 +50,6 @@ hotel.checkAvailability = function (){
 var elName = document.getElementById('hotelName');
 elName.textContent = hotel.checkAvailability();
 
-//DOM = Document Object
-var msg = document.title + '</br>';
-msg += '<b>Page adress is:</b>' + " " + document.URL + '</br>';
-msg += '<b>Last modified:</b>' + " " + document.lastModified;
-var el = document.getElementById('footer');
-el.innerHTML = msg;
-
 //Global Objects - String Objects
 var saying = 'Home sweet home'; 
 var msg1 = '<h3>Length is:</h3>' + saying.length;
@@ -75,13 +61,8 @@ msg1 += '<h3>Replacement:</h3>' + saying.replace('me','e');
 var el1 = document.getElementById('info');
 el1.innerHTML = msg1;
 
-//Arrays
-let myArray = [20, 50, 10, 33];
-myArray.push('hello');
-myArray.pop('hello');
-myArray.push('this is an array'); 
-myArray.push('kokooooo');
-myArray.pop([7]);
-myArray.push('Never ever again');
-myArray.pop([20]);
-console.log('This are the result' + myArray);
+//Global Objects: Math. Object. Creating a random number
+var randomNumber = Math.floor((Math.random() * 10) +1 );
+var elNumber = document.getElementById('math-object');
+elNumber.innerHTML = '<p>Randon number is:</p>' + randomNumber;
+console.log(randomNumber);
